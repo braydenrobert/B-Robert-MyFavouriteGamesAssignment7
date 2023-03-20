@@ -1,0 +1,16 @@
+<h2>Add Content</h2>
+<form>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="title" [(ngModel)]="newContent.title">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea class="form-control" id="description" [(ngModel)]="newContent.description"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="imageUrl">Image URL</label>
+    <input type="text" class="form-control" id="imageUrl" [(ngModel)]="newContent.imageUrl">
+  </div>
+  <button type="button" class="btn btn-primary" (click)="addContent()">Add Content</button>
+</form>
